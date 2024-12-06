@@ -5,7 +5,7 @@ terraform {
       version = "~> 6.4"
     }
   }
-  required_version = ">= 1.8"
+  required_version = "~> 1.8"
 }
  
 provider "akamai" {
