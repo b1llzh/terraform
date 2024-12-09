@@ -1,15 +1,15 @@
 data "akamai_group" "my_group" {
-     group_name   = "Akamai Technologies - Assets-1-3CV382"
-     contract_id  = "1-3CV382"     
+     group_name   = "zbtestgrp"
+     contract_id  = "1-1NC95D"     
 }
 
 data "akamai_property" "my_property" {
-    name = "zb.testrun.com"
-    version = "30"
+    name = "zbtestconfig"
+    version = "241"
 }
 
 data "akamai_appsec_configuration" "my_sec_config" {
-    name = "Akamai Labs"
+    name = "sclub-zbtestrun"
 }
 
 
@@ -22,5 +22,5 @@ output "my_property" {
 }
 
 output "my_sec_config" {
-    value = data.akamai_appsec_configuration.my_sec_config.output_text
+    value = data.akamai_appsec_configuration.my_sec_config.id
 }
